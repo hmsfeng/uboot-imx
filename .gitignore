@@ -85,3 +85,5 @@ GTAGS
 *.orig
 *~
 \#*#
+/arch/arm/dts/imx6ull-zdyz-4.14.98-2.0.0.dts
+/configs/mx6ull_zdyz_emmc_defconfig
