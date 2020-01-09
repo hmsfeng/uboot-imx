@@ -397,7 +397,11 @@ dtb-$(CONFIG_MX6) += imx6ul-14x14-ddr3-arm2.dtb \
 	imx6ull-14x14-ddr3-arm2-tsc.dtb \
 	imx6ull-9x9-evk.dtb \
 	imx6ull-14x14-evk.dtb \
+<<<<<<< HEAD
 	imx6ull-zdyz-emmc.dtb \
+=======
+	imx6ull-zdyz-4.14.98-2.0.0.dtb \
+>>>>>>> 8824ab836b9d22834d6e52cb23c6f314b73282a9
 	imx6ull-14x14-evk-emmc.dtb \
 	imx6ull-14x14-evk-gpmi-weim.dtb \
 	imx6ulz-14x14-evk.dtb \
