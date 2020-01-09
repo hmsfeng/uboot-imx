@@ -1,0 +1,14 @@
+if TARGET_MX6ULL_ZDYZ_EMMC
+
+config SYS_BOARD
+	default "mx6ull_zdyz_emmc"
+
+config SYS_VENDOR
+	default "freescale"
+
+config SYS_CONFIG_NAME
+	default "mx6ull_zdyz_emmc"
+
+config SYS_TEXT_BASE
+	default 0x87800000
+endif
