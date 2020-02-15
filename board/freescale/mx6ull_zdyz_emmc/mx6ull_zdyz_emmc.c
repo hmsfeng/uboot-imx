@@ -30,21 +30,21 @@
 
 DECLARE_GLOBAL_DATA_PTR;
 
-#define UART_PAD_CTRL  (PAD_CTL_PKE | PAD_CTL_PUE |		\
-	PAD_CTL_PUS_100K_UP | PAD_CTL_SPEED_MED |		\
-	PAD_CTL_DSE_40ohm   | PAD_CTL_SRE_FAST  | PAD_CTL_HYS)
+#define UART_PAD_CTRL (PAD_CTL_PKE | PAD_CTL_PUE |               \
+					   PAD_CTL_PUS_100K_UP | PAD_CTL_SPEED_MED | \
+					   PAD_CTL_DSE_40ohm | PAD_CTL_SRE_FAST | PAD_CTL_HYS)
 
-#define I2C_PAD_CTRL    (PAD_CTL_PKE | PAD_CTL_PUE |            \
-	PAD_CTL_PUS_100K_UP | PAD_CTL_SPEED_MED |               \
-	PAD_CTL_DSE_40ohm | PAD_CTL_HYS |			\
-	PAD_CTL_ODE)
+#define I2C_PAD_CTRL (PAD_CTL_PKE | PAD_CTL_PUE |               \
+					  PAD_CTL_PUS_100K_UP | PAD_CTL_SPEED_MED | \
+					  PAD_CTL_DSE_40ohm | PAD_CTL_HYS |         \
+					  PAD_CTL_ODE)
 
-#define LCD_PAD_CTRL    (PAD_CTL_HYS | PAD_CTL_PUS_100K_UP | PAD_CTL_PUE | \
-	PAD_CTL_PKE | PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm)
+#define LCD_PAD_CTRL (PAD_CTL_HYS | PAD_CTL_PUS_100K_UP | PAD_CTL_PUE | \
+					  PAD_CTL_PKE | PAD_CTL_SPEED_MED | PAD_CTL_DSE_40ohm)
 
 #define GPMI_PAD_CTRL0 (PAD_CTL_PKE | PAD_CTL_PUE | PAD_CTL_PUS_100K_UP)
 #define GPMI_PAD_CTRL1 (PAD_CTL_DSE_40ohm | PAD_CTL_SPEED_MED | \
-			PAD_CTL_SRE_FAST)
+						PAD_CTL_SRE_FAST)
 #define GPMI_PAD_CTRL2 (GPMI_PAD_CTRL0 | GPMI_PAD_CTRL1)
 
 #ifdef CONFIG_SYS_I2C
@@ -52,7 +52,7 @@ DECLARE_GLOBAL_DATA_PTR;
 /* I2C1 for PMIC and EEPROM */
 static struct i2c_pads_info i2c_pad_info1 = {
 	.scl = {
-		.i2c_mode =  MX6_PAD_UART4_TX_DATA__I2C1_SCL | PC,
+		.i2c_mode = MX6_PAD_UART4_TX_DATA__I2C1_SCL | PC,
 		.gpio_mode = MX6_PAD_UART4_TX_DATA__GPIO1_IO28 | PC,
 		.gp = IMX_GPIO_NR(1, 28),
 	},
@@ -64,10 +64,11 @@ static struct i2c_pads_info i2c_pad_info1 = {
 };
 
 #ifdef CONFIG_POWER
-#define I2C_PMIC       0
+#define I2C_PMIC 0
 int power_init_board(void)
 {
-	if (is_mx6ull_9x9_evk()) {
+	if (is_mx6ull_9x9_evk())
+	{
 		struct pmic *pfuze;
 		int ret;
 		unsigned int reg, rev_id;
@@ -84,7 +85,7 @@ int power_init_board(void)
 		pmic_reg_read(pfuze, PFUZE3000_DEVICEID, &reg);
 		pmic_reg_read(pfuze, PFUZE3000_REVID, &rev_id);
 		printf("PMIC: PFUZE3000 DEV_ID=0x%x REV_ID=0x%x\n",
-		       reg, rev_id);
+			   reg, rev_id);
 
 		/* disable Low Power Mode during standby mode */
 		pmic_reg_read(pfuze, PFUZE3000_LDOGCTL, &reg);
@@ -115,13 +116,15 @@ void ldo_mode_set(int ldo_bypass)
 
 	struct pmic *p = pmic_get("PFUZE3000");
 
-	if (!p) {
+	if (!p)
+	{
 		printf("No PMIC found!\n");
 		return;
 	}
 
 	/* switch to ldo_bypass mode */
-	if (ldo_bypass) {
+	if (ldo_bypass)
+	{
 		prep_anatop_bypass();
 		/* decrease VDDARM to 1.275V */
 		pmic_reg_read(p, PFUZE3000_SW1BVOLT, &value);
@@ -192,13 +195,15 @@ void ldo_mode_set(int ldo_bypass)
 	int ret;
 
 	ret = pmic_get("pfuze3000", &dev);
-	if (ret == -ENODEV) {
+	if (ret == -ENODEV)
+	{
 		printf("No PMIC found!\n");
 		return;
 	}
 
 	/* switch to ldo_bypass mode */
-	if (ldo_bypass) {
+	if (ldo_bypass)
+	{
 		prep_anatop_bypass();
 		/* decrease VDDARM to 1.275V */
 		value = pmic_reg_read(dev, PFUZE3000_SW1BVOLT);
@@ -242,7 +247,7 @@ static void setup_iomux_uart(void)
 #ifdef CONFIG_FSL_QSPI
 
 #ifndef CONFIG_DM_SPI
-#define QSPI_PAD_CTRL1	\
+#define QSPI_PAD_CTRL1                      \
 	(PAD_CTL_SRE_FAST | PAD_CTL_SPEED_MED | \
 	 PAD_CTL_PKE | PAD_CTL_PUE | PAD_CTL_PUS_47K_UP | PAD_CTL_DSE_120ohm)
 
@@ -261,7 +266,7 @@ static int board_qspi_init(void)
 #ifndef CONFIG_DM_SPI
 	/* Set the iomux */
 	imx_iomux_v3_setup_multiple_pads(quadspi_pads,
-					 ARRAY_SIZE(quadspi_pads));
+									 ARRAY_SIZE(quadspi_pads));
 #endif
 	/* Set the clock */
 	enable_qspi_clk(0);
@@ -299,7 +304,7 @@ static void setup_gpmi_nand(void)
 	imx_iomux_v3_setup_multiple_pads(nand_pads, ARRAY_SIZE(nand_pads));
 
 	setup_gpmi_io_clk((3 << MXC_CCM_CSCDR1_BCH_PODF_OFFSET) |
-			  (3 << MXC_CCM_CSCDR1_GPMI_PODF_OFFSET));
+					  (3 << MXC_CCM_CSCDR1_GPMI_PODF_OFFSET));
 
 	/* enable apbh clock gating */
 	setbits_le32(&mxc_ccm->CCGR0, MXC_CCM_CCGR0_APBHDMA_MASK);
@@ -307,12 +312,101 @@ static void setup_gpmi_nand(void)
 #endif
 
 #ifdef CONFIG_FEC_MXC
+#define ENET_PAD_CTRL (PAD_CTL_PUS_100K_UP | PAD_CTL_PUE | \
+					   PAD_CTL_SPEED_HIGH |                \
+					   PAD_CTL_DSE_48ohm | PAD_CTL_SRE_FAST)
+
+#define ENET_CLK_PAD_CTRL (PAD_CTL_SPEED_MED | \
+						   PAD_CTL_DSE_120ohm | PAD_CTL_SRE_FAST)
+
+#define ENET_RX_PAD_CTRL (PAD_CTL_PKE | PAD_CTL_PUE | \
+						  PAD_CTL_SPEED_HIGH | PAD_CTL_SRE_FAST)
+#define ENET1_RESET IMX_GPIO_NR(5, 7) //GPIO5_7
+#define ENET2_RESET IMX_GPIO_NR(5, 8) //GPIO5_8
+/*
+ * pin conflicts for fec1 and fec2, GPIO1_IO06 and GPIO1_IO07 can only
+ * be used for ENET1 or ENET2, cannot be used for both.
+ */
+static iomux_v3_cfg_t const fec1_pads[] = {
+	MX6_PAD_GPIO1_IO06__ENET1_MDIO | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_GPIO1_IO07__ENET1_MDC | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_TX_DATA0__ENET1_TDATA00 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_TX_DATA1__ENET1_TDATA01 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_TX_EN__ENET1_TX_EN | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_TX_CLK__ENET1_REF_CLK1 | MUX_PAD_CTRL(ENET_CLK_PAD_CTRL),
+	/* Pin conflicts with LCD PWM1 */
+	MX6_PAD_ENET1_RX_DATA0__ENET1_RDATA00 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_RX_DATA1__ENET1_RDATA01 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_RX_ER__ENET1_RX_ER | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET1_RX_EN__ENET1_RX_EN | MUX_PAD_CTRL(ENET_PAD_CTRL),
+};
+
+static iomux_v3_cfg_t const fec1_phy_rst[] = {
+	/*
+	 * ALT5 mode is only valid when TAMPER pin is used for GPIO.
+	 * This depends on FUSE settings, TAMPER_PIN_DISABLE[1:0].
+	 *
+	 * ENET1_RST
+	 */
+	MX6_PAD_SNVS_TAMPER7__GPIO5_IO07 | MUX_PAD_CTRL(NO_PAD_CTRL),
+};
+
+static iomux_v3_cfg_t const fec2_pads[] = {
+	MX6_PAD_GPIO1_IO06__ENET2_MDIO | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_GPIO1_IO07__ENET2_MDC | MUX_PAD_CTRL(ENET_PAD_CTRL),
+
+	MX6_PAD_ENET2_RX_DATA0__ENET2_RDATA00 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET2_RX_DATA1__ENET2_RDATA01 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET2_RX_EN__ENET2_RX_EN | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET2_RX_ER__ENET2_RX_ER | MUX_PAD_CTRL(ENET_PAD_CTRL),
+
+
+	MX6_PAD_ENET2_TX_DATA0__ENET2_TDATA00 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET2_TX_DATA1__ENET2_TDATA01 | MUX_PAD_CTRL(ENET_PAD_CTRL),
+	MX6_PAD_ENET2_TX_CLK__ENET2_REF_CLK2 | MUX_PAD_CTRL(ENET_CLK_PAD_CTRL),
+	MX6_PAD_ENET2_TX_EN__ENET2_TX_EN | MUX_PAD_CTRL(ENET_PAD_CTRL),
+};
+
+static iomux_v3_cfg_t const fec2_phy_rst[] = {
+	/*
+	 * ENET2_RST
+	 *
+	 * This depends on FUSE settings, TAMPER_PIN_DISABLE[1:0]
+	 */
+	MX6_PAD_SNVS_TAMPER8__GPIO5_IO08 | MUX_PAD_CTRL(NO_PAD_CTRL),
+};
+
+static void setup_iomux_fec(int fec_id)
+{
+	if (fec_id == 0)
+	{
+		SETUP_IOMUX_PADS(fec1_pads);
+		SETUP_IOMUX_PADS(fec1_phy_rst);
+		gpio_request(ENET1_RESET, "fec1 reset");
+		gpio_direction_output(ENET1_RESET, 1);
+		gpio_set_value(ENET1_RESET, 0);
+		mdelay(20);
+		gpio_set_value(ENET1_RESET, 1);
+	}
+	else
+	{
+		SETUP_IOMUX_PADS(fec2_pads);
+		SETUP_IOMUX_PADS(fec2_phy_rst);
+		gpio_request(ENET2_RESET, "fec2 reset");
+		gpio_direction_output(ENET2_RESET, 1);
+		gpio_set_value(ENET2_RESET, 0);
+		mdelay(20);
+		gpio_set_value(ENET2_RESET, 1);
+	}
+}
+
 static int setup_fec(int fec_id)
 {
 	struct iomuxc *const iomuxc_regs = (struct iomuxc *)IOMUXC_BASE_ADDR;
 	int ret;
 
-	if (fec_id == 0) {
+	if (fec_id == 0)
+	{
 		if (check_module_fused(MX6_MODULE_ENET1))
 			return -1;
 
@@ -321,8 +415,10 @@ static int setup_fec(int fec_id)
 		 * clear gpr1[13], set gpr1[17].
 		 */
 		clrsetbits_le32(&iomuxc_regs->gpr[1], IOMUX_GPR1_FEC1_MASK,
-				IOMUX_GPR1_FEC1_CLOCK_MUX1_SEL_MASK);
-	} else {
+						IOMUX_GPR1_FEC1_CLOCK_MUX1_SEL_MASK);
+	}
+	else
+	{
 		if (check_module_fused(MX6_MODULE_ENET2))
 			return -1;
 
@@ -331,13 +427,13 @@ static int setup_fec(int fec_id)
 		 * clear gpr1[14], set gpr1[18].
 		 */
 		clrsetbits_le32(&iomuxc_regs->gpr[1], IOMUX_GPR1_FEC2_MASK,
-				IOMUX_GPR1_FEC2_CLOCK_MUX1_SEL_MASK);
+						IOMUX_GPR1_FEC2_CLOCK_MUX1_SEL_MASK);
 	}
 
 	ret = enable_fec_anatop_clock(fec_id, ENET_50MHZ);
 	if (ret)
 		return ret;
-
+	setup_iomux_fec(fec_id);
 	enable_enet_clk(1);
 
 	return 0;
@@ -410,35 +506,54 @@ void do_enable_parallel_lcd(struct display_info_t const *dev)
 
 	/* Reset the LCD */
 	gpio_request(IMX_GPIO_NR(5, 9), "lcd reset");
-	gpio_direction_output(IMX_GPIO_NR(5, 9) , 0);
+	gpio_direction_output(IMX_GPIO_NR(5, 9), 0);
 	udelay(500);
-	gpio_direction_output(IMX_GPIO_NR(5, 9) , 1);
+	gpio_direction_output(IMX_GPIO_NR(5, 9), 1);
 
 	/* Set Brightness to high */
 	gpio_request(IMX_GPIO_NR(1, 8), "backlight");
-	gpio_direction_output(IMX_GPIO_NR(1, 8) , 1);
+	gpio_direction_output(IMX_GPIO_NR(1, 8), 1);
 }
 
-struct display_info_t const displays[] = {{
-	.bus = MX6UL_LCDIF1_BASE_ADDR,
-	.addr = 0,
-	.pixfmt = 24,
-	.detect = NULL,
-	.enable	= do_enable_parallel_lcd,
-	.mode	= {
-		.name			= "TFT43AB",
-		.xres           = 480,
-		.yres           = 272,
-		.pixclock       = 108695,
-		.left_margin    = 8,
-		.right_margin   = 4,
-		.upper_margin   = 2,
-		.lower_margin   = 4,
-		.hsync_len      = 41,
-		.vsync_len      = 10,
-		.sync           = 0,
-		.vmode          = FB_VMODE_NONINTERLACED
-} } };
+struct display_info_t const displays[] = {
+	{.bus = MX6UL_LCDIF1_BASE_ADDR,
+	 .addr = 0,
+	 .pixfmt = 24,
+	 .detect = NULL,
+	 .enable = do_enable_parallel_lcd,
+	 .mode = {
+		 .name = "TFT43AB",
+		 .xres = 480,
+		 .yres = 272,
+		 .pixclock = 108695,
+		 .left_margin = 8,
+		 .right_margin = 4,
+		 .upper_margin = 2,
+		 .lower_margin = 4,
+		 .hsync_len = 41,
+		 .vsync_len = 10,
+		 .sync = 0,
+		 .vmode = FB_VMODE_NONINTERLACED}},
+	{.bus = MX6UL_LCDIF1_BASE_ADDR,
+	 .addr = 0,
+	 .pixfmt = 24,
+	 .detect = NULL,
+	 .enable = do_enable_parallel_lcd,
+	 .mode = {
+		 .name = "TFT7084",
+		 .xres = 800,
+		 .yres = 480,
+		 .pixclock = 30030,  //33.3MHz
+		 .left_margin = 210, //HBP 水平后肩
+		 .right_margin = 46, //HFP 水平前肩
+		 .upper_margin = 22, //VBP 垂直后肩
+		 .lower_margin = 23, //VFP 垂直前肩
+		 .hsync_len = 20,	//HSPW 水平行同步脉宽
+		 .vsync_len = 3,		//VSPW 垂直列同步脉宽
+		 .sync = 1,
+		 .vmode = FB_VMODE_NONINTERLACED}},
+	{.bus = MX6UL_LCDIF1_BASE_ADDR, .addr = 0, .pixfmt = 24, .detect = NULL, .enable = do_enable_parallel_lcd, .mode = {.name = "ATK7084", .xres = 800, .yres = 480, .pixclock = 10119, .left_margin = 210, .right_margin = 46, .upper_margin = 22, .lower_margin = 23, .hsync_len = 20, .vsync_len = 3, .sync = 1, .vmode = FB_VMODE_NONINTERLACED}},
+};
 size_t display_count = ARRAY_SIZE(displays);
 #endif
 
@@ -458,7 +573,7 @@ int board_init(void)
 	setup_i2c(0, CONFIG_SYS_I2C_SPEED, 0x7f, &i2c_pad_info1);
 #endif
 
-#ifdef	CONFIG_FEC_MXC
+#ifdef CONFIG_FEC_MXC
 	setup_fec(CONFIG_FEC_ENET_DEV);
 #endif
 
@@ -479,7 +594,7 @@ static const struct boot_mode board_boot_modes[] = {
 	{"sd1", MAKE_CFGVAL(0x42, 0x20, 0x00, 0x00)},
 	{"sd2", MAKE_CFGVAL(0x40, 0x28, 0x00, 0x00)},
 	{"qspi1", MAKE_CFGVAL(0x10, 0x00, 0x00, 0x00)},
-	{NULL,	 0},
+	{NULL, 0},
 };
 #endif
 
@@ -502,10 +617,11 @@ int board_late_init(void)
 	else
 		env_set("board_rev", "14X14");
 
-	if (is_cpu_type(MXC_CPU_MX6ULZ)) {
+	if (is_cpu_type(MXC_CPU_MX6ULZ))
+	{
 		env_set("board_name", "ULZ-EVK");
 		env_set("usb_net_cmd", "usb start");
-    }
+	}
 #endif
 
 #ifdef CONFIG_ENV_IS_IN_MMC
