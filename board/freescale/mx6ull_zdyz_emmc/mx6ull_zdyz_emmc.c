@@ -434,7 +434,8 @@ static int setup_fec(int fec_id)
 	if (ret)
 		return ret;
 	setup_iomux_fec(fec_id);
-	enable_enet_clk(1);
+	enable_enet_clk(fec_id);
+	// enable_enet_clk(1);
 
 	return 0;
 }
@@ -552,7 +553,24 @@ struct display_info_t const displays[] = {
 		 .vsync_len = 3,		//VSPW 垂直列同步脉宽
 		 .sync = 1,
 		 .vmode = FB_VMODE_NONINTERLACED}},
-	{.bus = MX6UL_LCDIF1_BASE_ADDR, .addr = 0, .pixfmt = 24, .detect = NULL, .enable = do_enable_parallel_lcd, .mode = {.name = "ATK7084", .xres = 800, .yres = 480, .pixclock = 10119, .left_margin = 210, .right_margin = 46, .upper_margin = 22, .lower_margin = 23, .hsync_len = 20, .vsync_len = 3, .sync = 1, .vmode = FB_VMODE_NONINTERLACED}},
+	{.bus = MX6UL_LCDIF1_BASE_ADDR,
+	 .addr = 0, 
+	 .pixfmt = 24,
+	 .detect = NULL,
+	 .enable = do_enable_parallel_lcd, 
+	 .mode = {
+		 .name = "ATK7084", 
+		 .xres = 800, 
+		 .yres = 480, 
+		 .pixclock = 10119, 
+		 .left_margin = 210, 
+		 .right_margin = 46, 
+		 .upper_margin = 22, 
+		 .lower_margin = 23, 
+		 .hsync_len = 20, 
+		 .vsync_len = 3, 
+		 .sync = 1, 
+		 .vmode = FB_VMODE_NONINTERLACED}},
 };
 size_t display_count = ARRAY_SIZE(displays);
 #endif
@@ -640,7 +658,7 @@ int checkboard(void)
 	else if (is_cpu_type(MXC_CPU_MX6ULZ))
 		puts("Board: MX6ULZ 14x14 EVK\n");
 	else
-		puts("Board: MX6ULL 14x14 EVK\n");
+		puts("Board: MX6ULL ZDYZ EMMC EVK\n");
 
 	return 0;
 }

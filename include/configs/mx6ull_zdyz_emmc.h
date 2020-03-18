@@ -130,6 +130,12 @@
 	"tee_file=undefined\0" \
 	"boot_fdt=try\0" \
 	"ip_dyn=yes\0" \
+	"eth1addr=00:04:9f:04:d2:35\0" \
+	"ethaddr=00:04:9f:04:d2:36\0" \
+	"ipaddr=192.168.3.3\0" \
+	"serverip=192.168.3.2\0" \
+	"gatewayip=192.168.3.1\0" \
+	"netmask=255.255.255.0\0" \
 	"panel=ATK7084\0" \
 	"mmcdev="__stringify(CONFIG_SYS_MMC_ENV_DEV)"\0" \
 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
@@ -338,7 +344,7 @@
 #define CONFIG_ETHPRIME			"FEC1"
 #endif
 #endif
-#define CONFIG_FEC_MXC_MDIO_BASE ENET2_BASE_ADDR
+#define CONFIG_FEC_MXC_MDIO_BASE IMX_FEC_BASE
 #endif
 
 #ifdef CONFIG_VIDEO
