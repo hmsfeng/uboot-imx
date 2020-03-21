@@ -1,0 +1,3 @@
+spl.c:19:6:spl_board_init	32	static
+spl.c:39:6:spl_board_prepare_for_boot	0	static
+spl.c:54:6:board_init_f	16	static

@@ -1,0 +1,2 @@
+iomux.c:16:6:imx8_iomux_setup_pad	32	static
+iomux.c:34:6:imx8_iomux_setup_multiple_pads	48	static

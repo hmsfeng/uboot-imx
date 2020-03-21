@@ -1,0 +1,4 @@
+fuse.c:43:5:fuse_sense	48	static
+fuse.c:38:5:fuse_read	0	static
+fuse.c:68:5:fuse_prog	32	static
+fuse.c:104:5:fuse_override	16	static

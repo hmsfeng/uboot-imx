@@ -1,0 +1,15 @@
+imx_lpi2c.c:43:12:imx_lpci2c_check_clear_error	0	static
+imx_lpi2c.c:270:12:bus_i2c_set_bus_speed	48	static
+imx_lpi2c.c:431:12:imx_lpi2c_set_bus_speed	0	static
+imx_lpi2c.c:74:12:bus_i2c_wait_for_tx_ready	48	static
+imx_lpi2c.c:198:12:bus_i2c_stop	32	static
+imx_lpi2c.c:348:12:bus_i2c_init.constprop	32	static
+imx_lpi2c.c:161:12:bus_i2c_start	64	static
+imx_lpi2c.c:384:12:imx_lpi2c_probe_chip	32	static
+imx_lpi2c.c:403:12:imx_lpi2c_xfer	96	static
+imx_lpi2c.c:25:12:init_i2c_power	0	static
+imx_lpi2c.c:441:12:imx_lpi2c_probe	80	static
+imx_lpi2c.c:265:12:imx_get_i2cclk	0	static
+imx_lpi2c.c:436:12:enable_i2c_clk	0	static
+imx_lpi2c.c:505:12:board_imx_lpi2c_bind	0	static
+imx_lpi2c.c:510:12:imx_lpi2c_bind	0	static

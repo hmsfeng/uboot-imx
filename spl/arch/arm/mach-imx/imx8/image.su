@@ -1,0 +1,2 @@
+image.c:62:12:get_container_size.constprop	48	static
+image.c:193:15:spl_mmc_get_uboot_raw_sector	48	static

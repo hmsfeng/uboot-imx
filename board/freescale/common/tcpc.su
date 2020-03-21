@@ -1,0 +1,15 @@
+tcpc.c:17:12:tcpc_log	144	static
+tcpc.c:32:5:tcpc_set_cc_to_source	48	static
+tcpc.c:51:5:tcpc_set_cc_to_sink	48	static
+tcpc.c:69:5:tcpc_set_plug_orientation	48	static
+tcpc.c:97:5:tcpc_get_cc_status	64	static
+tcpc.c:218:5:tcpc_clear_alert	48	static
+tcpc.c:234:5:tcpc_send_command	48	static
+tcpc.c:250:5:tcpc_polling_reg	80	static
+tcpc.c:279:6:tcpc_print_log	32	static
+tcpc.c:422:5:tcpc_disable_src_vbus	32	static
+tcpc.c:440:5:tcpc_disable_sink_vbus	32	static
+tcpc.c:778:6:tcpc_pd_sink_check_charging	48	static
+tcpc.c:292:5:tcpc_setup_dfp_mode	64	static
+tcpc.c:359:5:tcpc_setup_ufp_mode	48	static
+tcpc.c:928:5:tcpc_init	208	static

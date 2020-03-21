@@ -1,0 +1,16 @@
+fb_fsl_command.c:147:13:okay	0	static
+fb_fsl_command.c:179:13:upload	32	static
+fb_fsl_command.c:204:13:download	48	static
+fb_fsl_command.c:158:13:getvar	0	static
+fb_fsl_command.c:815:13:run_ucmd	32	static
+fb_fsl_command.c:723:13:flash	32	static
+fb_fsl_command.c:169:13:reboot_bootloader	0	static
+fb_fsl_command.c:769:13:erase	32	static
+fb_fsl_command.c:844:13:run_acmd	32	static
+fb_fsl_command.c:111:6:fastboot_run_bootmode	0	static
+fb_fsl_command.c:238:5:fastboot_data_remaining	0	static
+fb_fsl_command.c:260:6:fastboot_data_download	48	static
+fb_fsl_command.c:297:6:fastboot_data_complete	32	static
+fb_fsl_command.c:803:5:fastboot_set_reboot_flag	0	static
+fb_fsl_command.c:833:6:fastboot_acmd_complete	0	static
+fb_fsl_command.c:944:5:fastboot_handle_command	80	static

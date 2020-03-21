@@ -1,0 +1,5 @@
+tftp.c:603:12:tftp_init_load_addr	352	static
+tftp.c:308:13:tftp_send	48	static
+tftp.c:414:13:tftp_handler	64	static
+tftp.c:590:13:tftp_timeout_handler	16	static
+tftp.c:621:6:tftp_start	80	static

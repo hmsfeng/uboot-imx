@@ -1,0 +1,1 @@
+cmd_examples/standalone/hello_world := aarch64-linux-gnu-ld.bfd    -Ttext 0xc100000 -g -o examples/standalone/hello_world -e hello_world examples/standalone/hello_world.o examples/standalone/libstubs.o -L /home/vmuser/imx8qxp/gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu/bin/../lib/gcc/aarch64-linux-gnu/8.3.0 -lgcc

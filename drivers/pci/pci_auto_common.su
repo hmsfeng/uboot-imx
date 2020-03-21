@@ -1,0 +1,4 @@
+pci_auto_common.c:19:6:pciauto_region_init	0	static
+pci_auto_common.c:29:6:pciauto_region_align	0	static
+pci_auto_common.c:34:5:pciauto_region_allocate	0	static
+pci_auto_common.c:80:6:pciauto_config_init	16	static

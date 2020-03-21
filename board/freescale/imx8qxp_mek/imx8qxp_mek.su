@@ -1,0 +1,12 @@
+imx8qxp_mek.c:305:6:ss_mux_select	0	static
+imx8qxp_mek.c:56:5:board_early_init_f	48	static
+imx8qxp_mek.c:218:5:board_phy_config	32	static
+imx8qxp_mek.c:235:5:checkboard	16	static
+imx8qxp_mek.c:340:5:board_usb_init	32	static
+imx8qxp_mek.c:363:5:board_usb_cleanup	0	static
+imx8qxp_mek.c:379:5:board_init	96	static
+imx8qxp_mek.c:390:6:board_quiesce_devices	48	static
+imx8qxp_mek.c:403:6:detail_board_ddr_info	0	static
+imx8qxp_mek.c:411:6:reset_cpu	0	static
+imx8qxp_mek.c:417:5:ft_board_setup	0	static
+imx8qxp_mek.c:423:5:board_late_init	48	static

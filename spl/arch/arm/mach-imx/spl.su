@@ -1,0 +1,4 @@
+spl.c:101:5:spl_boot_device	16	static
+spl.c:182:5:g_dnl_bind_fixup	0	static
+spl.c:190:5:g_dnl_get_board_bcd_device_number	0	static
+spl.c:198:5:spl_boot_mode	16	static

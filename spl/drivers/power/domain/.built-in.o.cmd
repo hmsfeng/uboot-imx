@@ -1,0 +1,1 @@
+cmd_spl/drivers/power/domain/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o spl/drivers/power/domain/built-in.o spl/drivers/power/domain/power-domain-uclass.o spl/drivers/power/domain/imx8-power-domain.o 

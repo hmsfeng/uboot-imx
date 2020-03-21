@@ -1,0 +1,1 @@
+cmd_spl/drivers/pinctrl/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o spl/drivers/pinctrl/built-in.o spl/drivers/pinctrl/pinctrl-uclass.o spl/drivers/pinctrl/pinctrl-generic.o spl/drivers/pinctrl/nxp/built-in.o spl/drivers/pinctrl/broadcom/built-in.o 

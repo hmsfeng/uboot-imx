@@ -1,0 +1,5 @@
+core.c:34:13:cdns3_usb_phy_init	0	static
+core.c:24:12:cdns3_enable_clks	0	static
+core.c:29:12:cdns3_disable_clks	0	static
+core.c:378:5:cdns3_init	64	static
+core.c:403:6:cdns3_exit	32	static

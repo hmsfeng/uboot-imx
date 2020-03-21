@@ -1,0 +1,9 @@
+imx8-power-domain.c:21:12:imx8_power_domain_request	0	static
+imx8-power-domain.c:222:12:imx8_power_domain_of_xlate	0	static
+imx8-power-domain.c:263:12:imx8_power_domain_probe	16	static
+imx8-power-domain.c:35:12:imx8_power_domain_on	64	static
+imx8-power-domain.c:278:12:imx8_power_domain_ofdata_to_platdata	32	static
+imx8-power-domain.c:232:12:imx8_power_domain_bind	64	static
+imx8-power-domain.c:133:12:imx8_power_domain_off_parentnodes.isra.1	64	static
+imx8-power-domain.c:197:12:imx8_power_domain_off	80	static
+imx8-power-domain.c:28:12:imx8_power_domain_free	0	static

@@ -1,0 +1,10 @@
+fsl_esdhc.c:1627:12:fsl_esdhc_get_cd	32	static
+fsl_esdhc.c:1470:12:fsl_esdhc_probe	96	static
+fsl_esdhc.c:1710:12:fsl_esdhc_bind	32	static
+fsl_esdhc.c:1643:12:fsl_esdhc_set_ios	80	static
+fsl_esdhc.c:879:12:fsl_esdhc_execute_tuning	128	static
+fsl_esdhc.c:374:13:check_and_invalidate_dcache_range.isra.5	32	static
+fsl_esdhc.c:1634:12:fsl_esdhc_send_cmd	80	static
+fsl_esdhc.c:1431:12:esdhc_status_fixup	0	static
+fsl_esdhc.c:1443:6:fdt_fixup_esdhc	32	static
+fsl_esdhc.c:1466:13:init_clk_usdhc	0	static

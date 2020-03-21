@@ -1,0 +1,13 @@
+clock.c:21:5:mxc_get_clock	32	static
+clock.c:16:5:get_lpuart_clk	0	static
+clock.c:83:5:imx_get_fecclk	0	static
+clock.c:98:5:enable_i2c_clk	32	static
+clock.c:130:5:imx_get_i2cclk	32	static
+clock.c:148:6:init_clk_fspi	32	static
+clock.c:173:6:init_clk_gpmi_nand	48	static
+clock.c:214:6:enable_usboh3_clk	0	static
+clock.c:220:6:init_clk_usb3	16	static
+clock.c:243:5:cdns3_enable_clks	16	static
+clock.c:249:5:cdns3_disable_clks	16	static
+clock.c:273:6:init_clk_usdhc	48	static
+clock.c:331:6:init_clk_fec	64	static

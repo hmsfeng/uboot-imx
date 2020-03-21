@@ -1,0 +1,10 @@
+regmap.c:111:5:regmap_init_mem	112	static
+regmap.c:182:7:regmap_get_range	0	static
+regmap.c:193:5:regmap_uninit	16	static
+regmap.c:249:5:regmap_raw_read_range	0	static
+regmap.c:292:5:regmap_raw_read	0	static
+regmap.c:297:5:regmap_read	0	static
+regmap.c:358:5:regmap_raw_write_range	0	static
+regmap.c:401:5:regmap_raw_write	0	static
+regmap.c:407:5:regmap_write	32	static
+regmap.c:412:5:regmap_update_bits	32	static

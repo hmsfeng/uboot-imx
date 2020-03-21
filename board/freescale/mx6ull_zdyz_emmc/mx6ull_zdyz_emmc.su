@@ -1,0 +1,9 @@
+mx6ull_zdyz_emmc.c:502:6:do_enable_parallel_lcd	8	static
+mx6ull_zdyz_emmc.c:230:5:dram_init	8	static
+mx6ull_zdyz_emmc.c:443:5:board_phy_config	16	static
+mx6ull_zdyz_emmc.c:454:5:board_mmc_get_env_dev	0	static
+mx6ull_zdyz_emmc.c:459:5:mmc_map_to_kernel_blk	0	static
+mx6ull_zdyz_emmc.c:578:5:board_early_init_f	8	static
+mx6ull_zdyz_emmc.c:585:5:board_init	8	static
+mx6ull_zdyz_emmc.c:619:5:board_late_init	8	static
+mx6ull_zdyz_emmc.c:654:5:checkboard	8	static

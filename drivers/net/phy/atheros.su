@@ -1,0 +1,4 @@
+atheros.c:20:12:ar8021_config	32	static
+atheros.c:56:12:ar8035_config	32	static
+atheros.c:30:12:ar8031_config	32	static
+atheros.c:124:5:phy_atheros_init	16	static

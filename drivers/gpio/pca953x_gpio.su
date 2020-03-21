@@ -1,0 +1,9 @@
+pca953x_gpio.c:245:12:pca953x_xlate	0	static
+pca953x_gpio.c:237:12:pca953x_get_function	32	static
+pca953x_gpio.c:75:12:pca953x_write_single	64	static
+pca953x_gpio.c:177:12:pca953x_set_value	64	static
+pca953x_gpio.c:226:12:pca953x_direction_output	48	static
+pca953x_gpio.c:112:12:pca953x_read_regs	48	static
+pca953x_gpio.c:263:12:pca953x_probe	112	static
+pca953x_gpio.c:163:12:pca953x_get_value	64	static
+pca953x_gpio.c:221:12:pca953x_direction_input	48	static

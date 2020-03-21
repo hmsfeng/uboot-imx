@@ -1,0 +1,11 @@
+clk-imx8.c:898:12:imx8_clk_probe	0	static
+clk-imx8.c:451:32:check_imx8_lpcg_clk	32	static
+clk-imx8.c:484:27:check_imx8_slice_clk	32	static
+clk-imx8.c:806:12:imx8_clk_set_parent	48	static
+clk-imx8.c:754:12:__imx8_clk_enable	48	static
+clk-imx8.c:771:12:imx8_clk_disable	0	static
+clk-imx8.c:776:12:imx8_clk_enable	0	static
+clk-imx8.c:618:14:__imx8_clk_get_rate	64	static
+clk-imx8.c:640:14:imx8_clk_get_rate	0	static
+clk-imx8.c:694:14:__imx8_clk_set_rate	64	static
+clk-imx8.c:716:14:imx8_clk_set_rate	0	static

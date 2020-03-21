@@ -1,0 +1,7 @@
+lpcg.c:35:6:lpcg_clock_off	32	static
+lpcg.c:50:6:lpcg_clock_on	32	static
+lpcg.c:65:6:lpcg_is_clock_on	0	static
+lpcg.c:79:6:lpcg_clock_autogate	32	static
+lpcg.c:94:6:lpcg_all_clock_off	32	static
+lpcg.c:100:6:lpcg_all_clock_on	32	static
+lpcg.c:111:6:lpcg_all_clock_autogate	32	static

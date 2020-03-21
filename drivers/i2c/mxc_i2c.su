@@ -1,0 +1,10 @@
+mxc_i2c.c:197:12:wait_for_sr_state	56	static
+mxc_i2c.c:231:12:tx_byte	8	static
+mxc_i2c.c:261:13:i2c_imx_stop	8	static
+mxc_i2c.c:754:12:mxc_i2c_set_bus_speed	16	static
+mxc_i2c.c:252:6:__i2c_force_reset_slave	0	static
+mxc_i2c.c:358:5:i2c_idle_bus	32	static
+mxc_i2c.c:761:12:mxc_i2c_probe	40	static
+mxc_i2c.c:418:12:i2c_init_transfer.constprop	56	static
+mxc_i2c.c:849:12:mxc_i2c_xfer	56	static
+mxc_i2c.c:832:12:mxc_i2c_probe_chip	16	static

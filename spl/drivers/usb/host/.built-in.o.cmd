@@ -1,0 +1,1 @@
+cmd_spl/drivers/usb/host/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o spl/drivers/usb/host/built-in.o spl/drivers/usb/host/usb-uclass.o spl/drivers/usb/host/ehci-hcd.o spl/drivers/usb/host/ehci-mx6.o spl/drivers/usb/host/xhci.o spl/drivers/usb/host/xhci-mem.o spl/drivers/usb/host/xhci-ring.o spl/drivers/usb/host/xhci-imx8.o 

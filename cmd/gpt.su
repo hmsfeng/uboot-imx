@@ -1,0 +1,9 @@
+gpt.c:178:13:del_gpt_info	32	static
+gpt.c:95:14:extract_val	64	static
+gpt.c:158:12:calc_parts_list_len	64	static
+gpt.c:36:12:extract_env	96	static
+gpt.c:306:12:get_gpt_info	224	static
+gpt.c:265:12:create_gpt_partitions_list.isra.1	128	static
+gpt.c:372:12:set_gpt_info.isra.0	160	static
+gpt.c:227:13:print_gpt_info	80	static
+gpt.c:816:12:do_gpt	192	dynamic

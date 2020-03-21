@@ -1,0 +1,10 @@
+.imx6sx-17x17-arm2.dtb.pre.o: arch/arm/dts/.imx6sx-17x17-arm2.dtb.pre.tmp \
+ include/linux/kconfig.h include/generated/autoconf.h \
+ arch/arm/dts/imx6sx.dtsi \
+ arch/arm/dts/include/dt-bindings/clock/imx6sx-clock.h \
+ arch/arm/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/dts/include/dt-bindings/input/input.h \
+ arch/arm/dts/include/dt-bindings/input/linux-event-codes.h \
+ arch/arm/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ arch/arm/dts/include/dt-bindings/interrupt-controller/irq.h \
+ arch/arm/dts/imx6sx-pinfunc.h arch/arm/dts/skeleton.dtsi

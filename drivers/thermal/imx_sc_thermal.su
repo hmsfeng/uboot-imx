@@ -1,0 +1,5 @@
+imx_sc_thermal.c:85:12:imx_sc_thermal_probe	0	static
+imx_sc_thermal.c:31:12:read_temperature	64	static
+imx_sc_thermal.c:56:5:imx_sc_thermal_get_temp	96	static
+imx_sc_thermal.c:128:12:imx_sc_thermal_ofdata_to_platdata	144	static
+imx_sc_thermal.c:91:12:imx_sc_thermal_bind	48	static

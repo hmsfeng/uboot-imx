@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/nxp/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o drivers/pinctrl/nxp/built-in.o drivers/pinctrl/nxp/pinctrl-imx.o drivers/pinctrl/nxp/pinctrl-scu.o drivers/pinctrl/nxp/pinctrl-imx8.o 

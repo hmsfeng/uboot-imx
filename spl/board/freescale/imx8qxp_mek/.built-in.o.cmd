@@ -1,0 +1,1 @@
+cmd_spl/board/freescale/imx8qxp_mek/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o spl/board/freescale/imx8qxp_mek/built-in.o spl/board/freescale/imx8qxp_mek/imx8qxp_mek.o spl/board/freescale/imx8qxp_mek/spl.o 

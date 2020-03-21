@@ -1,0 +1,2 @@
+pci_common.c:18:13:pci_class_str	0	static
+pci_common.c:81:12:pci_skip_dev	0	static

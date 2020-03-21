@@ -1,0 +1,4 @@
+xhci-imx8.c:111:6:imx8_xhci_init	48	static
+xhci-imx8.c:158:12:xhci_imx8_probe	384	static
+xhci-imx8.c:150:6:imx8_xhci_reset	0	static
+xhci-imx8.c:219:12:xhci_imx8_remove	32	static

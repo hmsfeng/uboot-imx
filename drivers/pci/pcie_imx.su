@@ -1,0 +1,15 @@
+pcie_imx.c:548:13:imx_pcie_atu_outbound_set	0	static
+pcie_imx.c:589:22:get_bus_address	16	static
+pcie_imx.c:1671:12:imx_pcie_ofdata_to_platdata	112	static
+pcie_imx.c:268:12:pcie_phy_poll_ack	48	static
+pcie_imx.c:288:12:pcie_phy_wait_ack	32	static
+pcie_imx.c:623:12:imx_pcie_addr_valid	0	static
+pcie_imx.c:314:12:pcie_phy_read	32	static
+pcie_imx.c:344:12:pcie_phy_write.part.7	32	static
+pcie_imx.c:1505:12:imx_pcie_dm_read_config	64	static
+pcie_imx.c:1521:12:imx_pcie_dm_write_config	80	static
+pcie_imx.c:412:6:imx_pcie_gpr_read	0	static
+pcie_imx.c:417:6:imx_pcie_gpr_update_bits	0	static
+pcie_imx.c:719:12:imx8_pcie_assert_core_reset.isra.9	32	static
+pcie_imx.c:1662:12:imx_pcie_dm_remove	16	static
+pcie_imx.c:1537:12:imx_pcie_dm_probe	112	static

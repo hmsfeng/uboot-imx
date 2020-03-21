@@ -1,0 +1,9 @@
+video_common.c:54:12:hdmi_i2c_reg_read	48	static
+video_common.c:34:12:hdmi_i2c_reg_write.constprop	32	static
+video_common.c:71:5:lvds2hdmi_setup	64	static
+video_common.c:192:5:lvds_soc_setup	96	static
+video_common.c:288:6:lvds_configure	32	static
+video_common.c:338:5:display_controller_setup	112	static
+video_common.c:495:7:video_hw_init	160	static
+video_common.c:604:6:imxdpuv1_fb_disable	0	static
+video_common.c:611:5:imxdpuv1_fb_init	48	static

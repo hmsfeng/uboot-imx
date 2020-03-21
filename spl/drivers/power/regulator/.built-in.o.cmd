@@ -1,0 +1,1 @@
+cmd_spl/drivers/power/regulator/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o spl/drivers/power/regulator/built-in.o spl/drivers/power/regulator/regulator-uclass.o spl/drivers/power/regulator/fixed.o 

@@ -1,0 +1,14 @@
+fsl_fspi.c:1391:12:fsl_fspi_release_bus	0	static
+fsl_fspi.c:1396:12:fsl_fspi_set_speed	0	static
+fsl_fspi.c:1376:12:fsl_fspi_claim_bus	32	static
+fsl_fspi.c:1201:12:fsl_fspi_child_pre_probe	16	static
+fsl_fspi.c:1309:12:fsl_fspi_ofdata_to_platdata	96	static
+fsl_fspi.c:157:12:fspi_read32	0	static
+fsl_fspi.c:163:13:fspi_write32	0	static
+fsl_fspi.c:1402:12:fsl_fspi_set_mode	0	static
+fsl_fspi.c:919:5:fspi_xfer	128	static
+fsl_fspi.c:1364:12:fsl_fspi_xfer	48	static
+fsl_fspi.c:1039:6:fspi_module_disable	16	static
+fsl_fspi.c:1214:12:fsl_fspi_probe	80	static
+fsl_fspi.c:1051:6:fspi_cfg_smpr	0	static
+fsl_fspi.c:1064:13:init_clk_fspi	0	static

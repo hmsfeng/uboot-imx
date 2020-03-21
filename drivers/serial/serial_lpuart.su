@@ -1,0 +1,13 @@
+serial_lpuart.c:109:12:get_lpuart_clk_rate	64	static
+serial_lpuart.c:230:13:_lpuart32_serial_setbrg_7ulp	64	static
+serial_lpuart.c:141:13:_lpuart_serial_setbrg	64	static
+serial_lpuart.c:491:12:lpuart_serial_ofdata_to_platdata	48	static
+serial_lpuart.c:78:13:lpuart_read32	0	static
+serial_lpuart.c:461:12:lpuart_serial_pending	32	static
+serial_lpuart.c:88:13:lpuart_write32	0	static
+serial_lpuart.c:449:12:lpuart_serial_putc	64	static
+serial_lpuart.c:439:12:lpuart_serial_getc	32	static
+serial_lpuart.c:299:13:_lpuart32_serial_setbrg	64	static
+serial_lpuart.c:423:12:lpuart_serial_setbrg	48	static
+serial_lpuart.c:483:12:lpuart_serial_probe	64	static
+serial_lpuart.c:103:12:get_lpuart_clk	0	static

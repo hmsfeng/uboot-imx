@@ -1,0 +1,7 @@
+cpu-uclass.c:109:12:uclass_cpu_init	48	static
+cpu-uclass.c:14:5:cpu_probe_all	48	static
+cpu-uclass.c:37:17:cpu_get_current_dev	48	static
+cpu-uclass.c:63:5:cpu_get_desc	0	static
+cpu-uclass.c:73:5:cpu_get_info	0	static
+cpu-uclass.c:83:5:cpu_get_count	0	static
+cpu-uclass.c:93:5:cpu_get_vendor	0	static

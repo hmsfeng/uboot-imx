@@ -1,0 +1,11 @@
+cache_v8.c:661:6:invalidate_dcache_all	0	static
+cache_v8.c:665:6:flush_dcache_all	0	static
+cache_v8.c:669:6:dcache_enable	0	static
+cache_v8.c:673:6:dcache_disable	0	static
+cache_v8.c:677:5:dcache_status	0	static
+cache_v8.c:682:6:mmu_set_region_dcache_behaviour	0	static
+cache_v8.c:715:6:icache_enable	0	static
+cache_v8.c:719:6:icache_disable	0	static
+cache_v8.c:723:5:icache_status	0	static
+cache_v8.c:728:6:invalidate_icache_all	0	static
+cache_v8.c:738:13:enable_caches	0	static

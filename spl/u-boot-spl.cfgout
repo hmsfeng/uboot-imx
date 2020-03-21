@@ -1,0 +1,19 @@
+# 1 "./board/freescale/imx8qxp_mek/imximage.cfg"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 31 "<command-line>"
+# 1 "/home/vmuser/imx8qxp/gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu/aarch64-linux-gnu/libc/usr/include/stdc-predef.h" 1 3 4
+# 32 "<command-line>" 2
+# 1 "./board/freescale/imx8qxp_mek/imximage.cfg"
+# 12 "./board/freescale/imx8qxp_mek/imximage.cfg"
+BOOT_FROM SD 0x400
+
+SOC_TYPE IMX8QX
+
+APPEND ahab-container.img
+
+CONTAINER
+
+IMAGE SCU mx8qx-mek-scfw-tcm.bin
+
+IMAGE A35 spl/u-boot-spl.bin 0x00100000

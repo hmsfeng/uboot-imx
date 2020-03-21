@@ -1,0 +1,4 @@
+imx_m4_mu.c:211:12:imx_m4_mu_remove	0	static
+imx_m4_mu.c:160:12:imx_m4_mu_call	112	static
+imx_m4_mu.c:190:12:imx_m4_mu_probe	32	static
+imx_m4_mu.c:216:12:imx_m4_mu_bind	0	static

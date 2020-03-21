@@ -1,0 +1,2 @@
+partition.c:39:12:partition_alloc	96	static
+partition.c:345:12:do_scu_rm	112	static

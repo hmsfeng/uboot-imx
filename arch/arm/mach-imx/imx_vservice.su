@@ -1,0 +1,5 @@
+imx_vservice.c:20:15:board_imx_vservice_get_buffer	0	static
+imx_vservice.c:28:8:imx_vservice_get_buffer	0	static
+imx_vservice.c:33:5:imx_vservice_blocking_request	64	static
+imx_vservice.c:90:25:board_imx_vservice_find_mu	112	static
+imx_vservice.c:118:31:imx_vservice_setup	96	static

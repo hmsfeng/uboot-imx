@@ -1,0 +1,4 @@
+cdns3-generic.c:103:12:cdns3_generic_handle_interrupts	16	static
+cdns3-generic.c:155:12:cdns3_generic_peripheral_ofdata_to_platdata	32	static
+cdns3-generic.c:113:12:cdns3_generic_peripheral_probe	208	static
+cdns3-generic.c:133:12:cdns3_generic_peripheral_remove	64	static

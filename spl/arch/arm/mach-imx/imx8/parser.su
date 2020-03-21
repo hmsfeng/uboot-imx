@@ -1,0 +1,7 @@
+parser.c:40:12:read	64	static
+parser.c:180:12:read_auth_container	64	static
+parser.c:272:5:mmc_load_image_parse_container	0	static
+parser.c:306:5:spi_load_image_parse_container	0	static
+parser.c:322:5:nand_load_image_parse_container	0	static
+parser.c:337:5:sdp_load_image_parse_container	0	static
+parser.c:352:12:nor_load_image_parse_container	0	static

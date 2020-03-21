@@ -1,0 +1,2 @@
+spl_sdp.c:18:12:spl_sdp_load_image	32	static
+spl_sdp.c:13:6:board_sdp_cleanup	0	static

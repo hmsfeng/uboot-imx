@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-imx/built-in.o :=  aarch64-linux-gnu-ld.bfd     -r -o arch/arm/mach-imx/built-in.o arch/arm/mach-imx/misc.o arch/arm/mach-imx/imx_bootaux.o arch/arm/mach-imx/imx_vservice.o arch/arm/mach-imx/lowlevel.o arch/arm/mach-imx/sip.o arch/arm/mach-imx/imx8/built-in.o 

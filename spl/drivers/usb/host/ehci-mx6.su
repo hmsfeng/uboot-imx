@@ -1,0 +1,11 @@
+ehci-mx6.c:329:13:ehci_mx6_powerup_fixup	48	static
+ehci-mx6.c:781:5:ehci_usb_remove	48	static
+ehci-mx6.c:236:5:usb_phy_mode	0	static
+ehci-mx6.c:389:12:board_usb_phy_mode	0	static
+ehci-mx6.c:403:12:board_ehci_hcd_init	0	static
+ehci-mx6.c:418:12:board_ehci_power	0	static
+ehci-mx6.c:423:5:ehci_mx6_common_init	64	static
+ehci-mx6.c:701:12:ehci_usb_probe	256	static
+ehci-mx6.c:527:12:mx6_init_after_reset	48	static
+ehci-mx6.c:587:12:board_ehci_usb_phy_mode	0	static
+ehci-mx6.c:666:12:ehci_usb_ofdata_to_platdata	48	static

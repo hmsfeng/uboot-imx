@@ -1,0 +1,15 @@
+f_sdp.c:659:12:sdp_get_alt	0	static
+f_sdp.c:438:13:sdp_tx_complete	32	static
+f_sdp.c:382:13:sdp_rx_data_complete	32	static
+f_sdp.c:475:12:sdp_setup	64	static
+f_sdp.c:297:13:sdp_rx_command_complete	0	static
+f_sdp.c:580:28:alloc_ep_req	48	static
+f_sdp.c:940:5:sdp_add	48	static
+f_sdp.c:666:13:sdp_disable	32	static
+f_sdp.c:574:13:sdp_unbind	32	static
+f_sdp.c:532:12:sdp_bind	64	static
+f_sdp.c:625:12:sdp_set_alt	64	static
+f_sdp.c:281:12:sdp_load_image_parse_container	0	static
+f_sdp.c:288:13:board_sdp_cleanup	0	static
+f_sdp.c:713:5:sdp_init	32	static
+f_sdp.c:922:6:sdp_handle	128	static

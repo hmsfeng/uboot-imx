@@ -1,0 +1,4 @@
+fb_fsl_common.c:90:5:get_block_size	48	static
+fb_fsl_common.c:116:6:fastboot_none_resp	0	static
+fb_fsl_common.c:121:6:board_fastboot_setup	48	static
+fb_fsl_common.c:346:6:fastboot_setup	64	static

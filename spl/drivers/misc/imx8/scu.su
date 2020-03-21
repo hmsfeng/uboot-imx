@@ -1,0 +1,6 @@
+scu.c:206:12:imx8_scu_remove	0	static
+scu.c:181:12:imx8_scu_probe	32	static
+scu.c:211:12:imx8_scu_bind	48	static
+scu.c:48:12:mu_hal_sendmsg	64	static
+scu.c:68:12:mu_hal_receivemsg	64	static
+scu.c:156:12:imx8_scu_call	80	static
